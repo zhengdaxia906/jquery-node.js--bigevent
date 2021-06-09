@@ -1,0 +1,52 @@
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    padding-right: 8px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.layer-body {
+    overflow: hidden;
+}
+.a {
+    transform: none !important;
+}
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+.userinfo {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 25%;
+
+    /* 设定无法被选中 */
+    user-select: none;
+    border-bottom: 1px solid silver;
+}
+.layui-nav-img {
+    height: 40px;
+    width: 40px;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+}
+.layui-body {
+    overflow: hidden;
+}
+.text-avator {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
