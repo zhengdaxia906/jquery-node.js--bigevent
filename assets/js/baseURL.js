@@ -11,7 +11,7 @@ $.ajaxPrefilter(function(options){
 
     // 全局统一挂载complete回调函数
     options.complete= function (res) {
-        console.log(res);
+        // console.log(res);
         if(res.responseJSON.status ===1&&res.responseJSON.message==='身份认证失败！'){
             // 强制清空token.并跳回原来的注册登录页
             

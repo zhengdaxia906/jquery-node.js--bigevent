@@ -5,7 +5,7 @@ $(function () {
 })
 
 // 监听退出按钮
-$('#btnlogout').on('click',function () {
+$('#btnLogout').on('click',function () {
     layer.confirm('确定退出？', {icon: 3, title:'提示'}, function(index){
         localStorage.removeItem('token')
         location.href='./login.html'
@@ -21,14 +21,10 @@ $('#btnlogout').on('click',function () {
 function getUserInfo() {
     $.ajax({
         method:"GET",
-        url:'/my/userinfo',
-        Headers:{
-            Authorization:localStorage.getItem('token')|''
-        },
-        
+        url:'/my/userinfo',      
         success:function (res) {
-            if(res.statue!==0){
-                return  layui.layer.msg('获取用户信息失败！')
+            if(res.status!== 0){
+                return  layui.layer.msg('获取用户信息失！')
                 
             }
             // 成功获取传入头像数据
